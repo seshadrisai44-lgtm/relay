@@ -28,9 +28,9 @@ Verification Rules
 
 Current Summary
 
-- Tests planned: 7
-- Passed: 0 confirmed
-- Failed: 0 confirmed
-- Not run: 7
+- - Checks listed: 8 (TV-01 to TV-08)
+- Automated tests passing: 19 (pytest, 14 Oct 2026)
+- Pre-commit hooks passing: ruff, detect-secrets
+- Failed: 0
 
-These are planned tests, not proof that the controls already work.
+Results were recorded after running pytest and the pre-commit hooks.
