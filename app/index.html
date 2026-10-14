@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Relay — Weekly Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 720px;
+            margin: 35px auto;
+            padding: 20px;
+            background: #f4f6f9;
+            color: #222;
+        }
+        h1 { color: #183153; }
+        form, .result {
+            background: white;
+            padding: 22px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-top: 6px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 18px;
+            background: #183153;
+            color: white;
+            border: 0;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .attestation { display: flex; gap: 10px; align-items: start; }
+        .attestation input { width: auto; margin-top: 17px; }
+        .result { border-left: 5px solid #777; }
+    </style>
+</head>
+<body>
+    <h1>Project Relay</h1>
+    <p>Weekly project status submission — synthetic demo data only.</p>
+
+    {% if result %}
+    <div class="result" role="status">
+        <h2>{{ result.title }}</h2>
+        <p>{{ result.message }}</p>
+        <p>Status: <strong>{{ result.status }}</strong></p>
+        {% if result.findings %}
+        <p>Findings: {{ result.findings | join(", ") }}</p>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    <form method="post" action="/submit">
+        <label for="engagement">Engagement</label>
+        <select id="engagement" name="engagement" required>
+            <option value="ACME-DEMO">ACME-DEMO (fictional)</option>
+            <option value="RELAY-TEST">RELAY-TEST (synthetic)</option>
+        </select>
+
+        <label for="week">Reporting week</label>
+        <input id="week" name="week" value="Week 1" required>
+
+        <label for="owner">Update owner</label>
+        <input id="owner" name="owner" value="Demo Consultant" required>
+
+        <label for="status">Project status</label>
+        <select id="status" name="status" required>
+            <option value="On track">On track</option>
+            <option value="At risk">At risk</option>
+            <option value="Blocked">Blocked</option>
+        </select>
+
+        <label for="progress_note">Progress note</label>
+        <textarea id="progress_note" name="progress_note" rows="4"
+                  required>Completed the internal design review.</textarea>
+
+        <label class="attestation">
+            <input type="checkbox" name="client_safe" value="yes">
+            I confirm this note is client-safe and contains no sensitive client data.
+        </label>
+
+        <button type="submit">Submit weekly status</button>
+    </form>
+</body>
+</html>
