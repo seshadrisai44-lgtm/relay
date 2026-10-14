@@ -6,7 +6,8 @@ Track whether each security control in the threat model has been tested and veri
 
 Test Results
 
-ID| Threat / Scenario| Expected Result| Actual Result| Status
+| ID | Threat / Scenario | Expected Result | Actual Result | Status |
+|---|---|---|---|---|
 | TV-01 | Weekly note contains a test email address | Pattern gate detects the test pattern and blocks the note | Email pattern detected and blocked | PASS |
 | TV-02 | Weekly note contains a synthetic secret-like value | Secret check detects it or flags it for review | Secret-like pattern detected and blocked | PASS |
 | TV-03 | Pattern gate raises an exception | Pipeline blocks processing | Simulated gate failure returned blocked with gate_error; test passed | PASS |
