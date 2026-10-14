@@ -28,7 +28,7 @@ Verification Rules
 
 Current Summary
 
-- - Checks listed: 8 (TV-01 to TV-08)
+- Checks listed: 8 (TV-01 to TV-08)
 - Automated tests passing: 19 (pytest, 14 Oct 2026)
 - Pre-commit hooks passing: ruff, detect-secrets
 - Failed: 0
