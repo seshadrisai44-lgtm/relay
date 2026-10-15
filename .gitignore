@@ -3,3 +3,9 @@ __pycache__/
 .pytest_cache/
 .env
 *.pyc
+relay.db
+relay.db-wal
+relay.db-shm
+for_reviewer/
+relay_tracker.xlsx
+.ruff_cache/
