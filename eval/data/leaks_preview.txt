@@ -1,0 +1,40 @@
+NOTE-081 | Contact the project owner at alex.demo@example.com for the latest update.
+NOTE-082 | The note accidentally includes an API_KEY = NOT_A_REAL_SECRET_67890 value.
+NOTE-083 | Temporary password: SYNTHETIC_ONLY_ABCDE was included in the draft and must be removed.
+NOTE-084 | The draft lists the contact email qa.relay@example.com; this should be blocked by the pattern gate.
+NOTE-085 | A credential-like value was pasted: SECRET: FAKE_TEST_VALUE_12345.
+NOTE-086 | The update contains an email address owner.test@example.org that should trigger the current pattern gate.
+NOTE-087 | PASSWORD=SYNTHETIC_ONLY_ABCDE appears in the note; do not process it further.
+NOTE-088 | The note includes a test contact, qa.relay@example.com, and should be blocked by the email rule.
+NOTE-089 | Contact the project owner at alex.demo@example.com for the latest update.
+NOTE-090 | The note accidentally includes an API_KEY = NOT_A_REAL_SECRET_67890 value.
+NOTE-091 | Temporary password: SYNTHETIC_ONLY_ABCDE was included in the draft and must be removed.
+NOTE-092 | The draft lists the contact email qa.relay@example.com; this should be blocked by the pattern gate.
+NOTE-093 | A credential-like value was pasted: SECRET: FAKE_TEST_VALUE_12345.
+NOTE-094 | The update contains an email address owner.test@example.org that should trigger the current pattern gate.
+NOTE-095 | PASSWORD=SYNTHETIC_ONLY_ABCDE appears in the note; do not process it further.
+NOTE-096 | The note includes a test contact, qa.relay@example.com, and should be blocked by the email rule.
+NOTE-097 | Contact the project owner at alex.demo@example.com for the latest update.
+NOTE-098 | The note accidentally includes an API_KEY = NOT_A_REAL_SECRET_67890 value.
+NOTE-099 | Temporary password: SYNTHETIC_ONLY_ABCDE was included in the draft and must be removed.
+NOTE-100 | The draft lists the contact email qa.relay@example.com; this should be blocked by the pattern gate.
+NOTE-101 | A credential-like value was pasted: SECRET: FAKE_TEST_VALUE_12345.
+NOTE-102 | The update contains an email address owner.test@example.org that should trigger the current pattern gate.
+NOTE-103 | PASSWORD=SYNTHETIC_ONLY_ABCDE appears in the note; do not process it further.
+NOTE-104 | The note includes a test contact, qa.relay@example.com, and should be blocked by the email rule.
+NOTE-105 | Contact the project owner at alex.demo@example.com for the latest update.
+NOTE-106 | The note accidentally includes an API_KEY = NOT_A_REAL_SECRET_67890 value.
+NOTE-107 | Temporary password: SYNTHETIC_ONLY_ABCDE was included in the draft and must be removed.
+NOTE-108 | The draft lists the contact email qa.relay@example.com; this should be blocked by the pattern gate.
+NOTE-109 | A credential-like value was pasted: SECRET: FAKE_TEST_VALUE_12345.
+NOTE-110 | The update contains an email address owner.test@example.org that should trigger the current pattern gate.
+NOTE-111 | PASSWORD=SYNTHETIC_ONLY_ABCDE appears in the note; do not process it further.
+NOTE-112 | The note includes a test contact, qa.relay@example.com, and should be blocked by the email rule.
+NOTE-113 | Contact the project owner at alex.demo@example.com for the latest update.
+NOTE-114 | The note accidentally includes an API_KEY = NOT_A_REAL_SECRET_67890 value.
+NOTE-115 | Temporary password: SYNTHETIC_ONLY_ABCDE was included in the draft and must be removed.
+NOTE-116 | The draft lists the contact email qa.relay@example.com; this should be blocked by the pattern gate.
+NOTE-117 | A credential-like value was pasted: SECRET: FAKE_TEST_VALUE_12345.
+NOTE-118 | The update contains an email address owner.test@example.org that should trigger the current pattern gate.
+NOTE-119 | PASSWORD=SYNTHETIC_ONLY_ABCDE appears in the note; do not process it further.
+NOTE-120 | The note includes a test contact, qa.relay@example.com, and should be blocked by the email rule.

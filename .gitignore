@@ -9,3 +9,4 @@ relay.db-shm
 for_reviewer/
 relay_tracker.xlsx
 .ruff_cache/
+audit/audit.jsonl

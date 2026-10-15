@@ -1,0 +1,47 @@
+engagements:
+  - code: ENG-001
+    lead: u_1001
+    consultants: [u_2001, u_2002]
+    milestones:
+      M1: "Phase 1 onboarding complete"
+      M2: "Phase 2 runbook review"
+    kr_links:
+      M1: KR-1.1
+      M2: KR-1.2
+    denylist: [Examplecorp, Examplecorp Holdings, examplecorp.example]
+  - code: ENG-002
+    lead: u_1002
+    consultants: [u_2003, u_2004]
+    milestones:
+      M1: "Kickoff complete"
+      M2: "Interim review"
+    kr_links:
+      M1: KR-2.1
+      M2: KR-2.2
+    denylist: [Northwind Demo, Northwind Labs]
+  - code: ENG-003
+    lead: u_1003
+    consultants: [u_2005]
+    milestones:
+      M1: "Access setup complete"
+    kr_links:
+      M1: KR-3.1
+    denylist: [Fabrikam Test]
+  - code: ENG-004
+    lead: u_1004
+    consultants: [u_2006, u_2007]
+    milestones:
+      M1: "Assessment plan agreed"
+      M2: "Report draft done"
+    kr_links:
+      M1: KR-4.1
+      M2: KR-4.2
+    denylist: [Tailspin Sample]
+  - code: ENG-005
+    lead: u_1005
+    consultants: [u_2008]
+    milestones:
+      M1: "Scope signed off"
+    kr_links:
+      M1: KR-5.1
+    denylist: [Wingtip Mock]

@@ -9,13 +9,13 @@ def test_safe_note_is_allowed():
 def test_email_address_is_blocked():
     result = check_note("Contact: test@example.com")
     assert result["allowed"] is False
-    assert "email_address" in result["findings"]
+    assert "PG-03" in result["findings"]
 
 
 def test_secret_like_value_is_blocked():
     result = check_note("API_KEY = fake_test_value")
     assert result["allowed"] is False
-    assert "secret_like_value" in result["findings"]
+    assert "PG-05" in result["findings"]
 
 
 def test_invalid_input_is_not_allowed():
