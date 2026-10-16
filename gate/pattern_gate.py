@@ -1,5 +1,7 @@
 import re
 
+from gate.denylist import contains_denylisted_term
+
 PATTERNS = {
     "PG-01": r"\b\d{1,3}(?:\.\d{1,3}){3}(?:/\d{1,2})?\b",
     "PG-02": r"\b[\w-]+\.(?:corp|local)\b|\bSRV-[\w-]+|\bDC\d{2}\b|-prod-\w*",
@@ -18,5 +20,17 @@ def check_note(note: str) -> dict:
     """Block notes that hit any pattern rule."""
     if not isinstance(note, str):
         return {"allowed": False, "findings": ["invalid_input"]}
-    findings = [r for r, p in PATTERNS.items() if re.search(p, note, re.IGNORECASE)]
-    return {"allowed": not findings, "findings": findings}
+
+    findings = [
+        rule
+        for rule, pattern in PATTERNS.items()
+        if rule != "PG-08" and re.search(pattern, note, re.IGNORECASE)
+    ]
+
+    if contains_denylisted_term(note):
+        findings.append("PG-08")
+
+    return {
+        "allowed": not findings,
+        "findings": findings,
+    }
