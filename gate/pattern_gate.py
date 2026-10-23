@@ -6,7 +6,7 @@ PATTERNS = {
     "PG-01": r"\b\d{1,3}(?:\.\d{1,3}){3}(?:/\d{1,2})?\b",
     "PG-02": r"\b[\w-]+\.(?:corp|local)\b|\bSRV-[\w-]+|\bDC\d{2}\b|-prod-\w*",
     "PG-03": r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b|https?://\S+",
-    "PG-04": r"\b[A-Za-z]+\\{1,2}svc_\w+|\bsvc_\w+",
+    "PG-04": r"\b[A-Za-z]+\\{1,2}svc_\w+|\bsvc_\w+|\b\w+@[\w-]+\.local\b",
     "PG-05": r"\b(?:API_KEY|SECRET|PASSWORD)\s*[:=]\s*\S+|\bAKIA[A-Z0-9]{16}\b",
     "PG-06": r"\b[0-9a-fA-F]{32}\b|\b(?:[0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}\b|\b[A-Za-z]:\\{1,2}\w+",
     "PG-07": r"\b(?:INC|CHG|RITM)\d{5,}\b",
