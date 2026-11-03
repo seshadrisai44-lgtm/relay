@@ -102,7 +102,15 @@ def validate(ops, note, parsed, eng):
             d = date.fromisoformat(op["due"])
             if not (week <= d <= week + timedelta(days=21)):
                 errors.append("due date out of bounds")
-        for field in ("title", "summary", "reason", "evidence"):
+        for field in (
+            "title",
+            "summary",
+            "reason",
+            "evidence",
+            "task_ref",
+            "category",
+            "assignee",
+        ):
             if field in op and not check_note(op[field])["allowed"]:
                 errors.append(f"text re-scan blocked: {field}")
     return errors
