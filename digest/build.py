@@ -103,3 +103,9 @@ if __name__ == "__main__":
     )
     write_digest(d, blockers)
     print(json.dumps(d, indent=2, default=str))
+    try:
+        from digest_ai import summarize
+
+        print("\nAI summary:\n" + summarize(json.dumps(d, default=str)))
+    except Exception as e:
+        print("\n(AI summary skipped:", e, ")")
